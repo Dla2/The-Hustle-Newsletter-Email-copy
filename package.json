@@ -1,0 +1,17 @@
+{
+  "name": "hustle",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "mjml src/index.mjml --output src/index.html",
+    "start": "mjml --watch index.mjml --output index.html",
+    "server": "live-server --host=localhost --open=index.html",
+    "dev": "concurrently \"yarn start\" \"yarn server\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "live-server": "^1.2.2",
+    "mjml": "^4.13.0"
+  }
+}
